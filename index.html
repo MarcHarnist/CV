@@ -1,0 +1,488 @@
+
+
+<!--
+	Hello! Welcome in my code!
+	
+	The code below insert a page break. Usefull for print in PDF. 
+	! Use Edge browser.
+	<div style="page-break-after:always;"> </div> // add a page break for pdf creation and print -->
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Marc Harnist</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Awesome font -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<!-- Bootstrap (look at the bootom too) -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<!-- Fichiers css maison -->
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" media="screen" href="css/screen.css" type="text/css" />
+		<link rel="stylesheet" media="print" href="css/print.css" type="text/css" />		
+		
+	</head>
+	<body>
+		<div class="container"><!-- Content profil picture, name, two buttons: share and download -->
+			<div class="page-header mt-1"><!-- mt-1 is a Bootstrap class = m(argin)t(op)-1 -->
+			
+				<!-- HEADER -->
+				<header class="row pt-3"><!-- 5 rows	-->
+				<div class="col-lg-2">
+					<figure>
+					<!-- Img with "rounded-circle" Bootstrap class used here -->
+					<img src="http://marcharnist.fr/img/logo.png" width="160" height="199" alt="Developpeur intégrateur référenceur web Marc Harnist" class="rounded-circle profile_picture">
+					</figure>
+				</div>
+				<div class="col-lg-10">
+					<div class="row"><!-- The 10 columns above are cut in 12 col -->
+					<div class="col-lg-7">
+						<h1 class="h2">Marc Harnist</h1>
+					</div>
+					<nav class="offset-col-1 col-lg-5">
+						<!-- <div id="animated_block"> -->
+						<div id="animated_block" class="btn-group" aria-label="Button group with nested dropdown">
+							<div class="btn-group" role="group">
+								<button id="btnGroupDrop1" type="button" class="btn btn-light text-muted dropdown-toggle rounded" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="fa fa-share" aria-hidden="true">
+										Partager
+									</span>
+								</button>
+								<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+									<a class="dropdown-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//twitter.com/home?status=http%253A//harnistmarc.000webhostapp.com/cv-bootstrap/index.html" target="_blank">Facebook</a>
+									<a class="dropdown-item" href="https://twitter.com/home?status=http%3A//harnistmarc.000webhostapp.com/cv-bootstrap/index.html" target="_blank">Twitter</a>
+									<a class="dropdown-item" href="https://plus.google.com/share?url=https%3A//www.facebook.com/sharer/sharer.php?u=https%253A//twitter.com/home?status=http%25253A//harnistmarc.000webhostapp.com/cv-bootstrap/index.html" target="_blank">Google</a>
+									<a class="dropdown-item" href="mailto:?&body=https%3A//www.linkedin.com/sharediv?mini=true%26url=http%253A//harnistmarc.000webhostapp.com/?dir=cv-bootstrap/index.html%26title=Marc%2520Harnist%2520CV%2520D%25C3%25A9veloppeur%2520int%25C3%25A9grateur%2520r%25C3%25A9f%25C3%25A9renceur%26summary=%26source=">Mail</a>
+								</div>
+							</div>
+							<a class="btn btn-success rounded ml-2" href="CV-Marc-Harnist-21-Mai-2019.pdf" download>
+								<span class="fa fa-download space" aria-hidden="true">
+									Télécharger
+								</span>
+							</a>
+						</div>	
+					</nav><!-- Close <div class="offset-col-1 col-lg-5"> -->
+					<div class="col-lg-10">	<!-- Subtitle -->
+						<!-- Boot. class "h3" reduce the font-size; "text-muted" -> grey color -->
+						<h2 class="h4 text-muted pl-3 mt-3 mb-3">
+							Développeur Web Junior
+						</h2>
+					</div>
+					</div><!-- Close <div class="row">The 10 columns above are cut in 12 col -->
+					
+					<div class="row not-printed">	<!-- Social networks links -->
+						<div class="col-lg-4"><!-- text-primary = blue -->
+							<ul class="text-primary list-unstyled">	<!-- Social networks links -->
+								<li><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> <a href="notebook/index.php?page=contact">Contact</a></li>
+								<li class="mt-3"><i class=" fa fa-home fa-fw" aria-hidden="true"></i> <a target="_blank" href="index.php">Le Blog de Marc</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-4"><!-- text-primary = blue -->
+							<ul class="text-primary list-unstyled">	<!-- Social networks links -->
+								<li><i class=" fa fa-twitter" aria-hidden="true"></i> <a target="_blank" href="https://twitter.com/Harnist17">Twitter</a></li>
+								<li class="mt-3"><i class=" fa fa-linkedin" aria-hidden="true"></i> <a target="_blank" href="https://www.linkedin.com/in/marc-harnist-326566120/">Linkedin</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-4"><!-- text-primary = blue -->
+							<ul class="text-primary list-unstyled">	<!-- Social networks links -->
+								<li><i class=" fa fa-viadeo" aria-hidden="true"></i> <a target="_blank" href="http://www.viadeo.com/p/002zd6mzz55n9a9">Viadeo</a></li>
+								<li class="mt-3"><i class=" fa fa-github" aria-hidden="true"></i> <a id="github_name" target="_blank" href="https://github.com/MarcHarnist/">GitHub</a></li>
+							</ul>
+						</div>
+					</div>	<!-- Social networks links -->
+				</div>
+				</header>
+				<div class="col-lg-12"><hr></div> <!-- ___________________________ -->
+				
+				<div class="row"><!-- 1/4 PROFILE -->
+				
+				<!-- Display a user icon	-->
+				<div class="col-lg-1 text-right"><i class=" fa fa-user fa-2x" aria-hidden="true"></i></div>
+				<article class="col-lg-6"><!-- Profile -->
+					<h3>Parcours récent</h3>
+					<div class=" text-muted">
+					    <ul><li>Mai-juin 2019 Formation Java sur Openclassrooms <strong>en cours</strong></li>
+							<li>Sept 2018 Développeur web chez Idem-Santé en CDD de six mois</li>
+							<li>Janv 2018 Formation développeur web PHP chez Sylvan La Rochelle </li>
+							<li>2006 - 2012 Webmaster freelance et référencement pour les PME</li>
+						</ul>
+						<h4 class="h6">Frameworks, CMS et langages</h4>
+						<ul>
+							<li>Bootstrap et Asp.net MVC en C#, PHP et Sql</li>
+							<li>Wordpress et Dotclear</li>
+							<li>Compétences: récolte des besoins du client, écriture du projet, des contrats, des factures, écriture du code frontend et backend</li>
+						</ul>
+						<h4 class="h6">Mobilité</h4>
+						<ul>
+							<li>Disponible de suite</li>
+							<li>Permis B et véhicule léger</li>
+							<li>Zone de travail: Niort, Poitiers intra-muros, La Rochelle</li>
+						</ul>
+						<a class="btn btn-primary mb-1 mt-2 not-printed" data-toggle="collapse" href="#centresInterets" role="button" aria-expanded="false" aria-controls="collapseExample">
+						Centres d'intérêts
+						</a>
+					
+						<div class="collapse not-printed" id="centresInterets">
+							<div class="card card-body">
+								<ul>
+									<li>La recherche
+										<ul>
+											<li>Langues anciennes
+												<ul>
+													<li>Hiéroglyphes</li>
+													<li>Araméen</li>
+													<li>Hébreu</li>
+													<li>Arabe classique</li>
+													<li>Grec classique</li>
+													<li>Latin</li>
+												</ul>
+											</li>	
+											<li>Histoire</li>
+											<li>Mathématiques</li>
+											<li>Architecture web et programmation
+												<ul>
+													<li>MVC</li>
+													<li>POO</li>
+													<li>CMS</li>
+													<li>Symfony</li>
+													<li>Bootstrap</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>L'écologie
+										<ul>
+											<li>Agro-écologie</li>
+											<li>Energie propre</li>
+											<li>Gestion des déchets
+												<ul>
+													<li>Nucléaire</li>
+													<li>Recyclage</li>
+													<li>Obsolescence programmée</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>Economie et politique</li>
+									<li>Musique
+										<ul>
+											<li>Musique folk sur guitare sèche</li>
+										</ul>
+									</li>
+								</ul>
+							</div><!-- <div class="card card-body"> -->
+						</div><!-- close <div class="collapse" id="collapseExample"> -->
+						
+						<a class="btn btn-primary mb-1 mt-2 not-printed" data-toggle="collapse" href="#projets" role="button" aria-expanded="false" aria-controls="projets">
+						Projets
+						</a>
+						<div class="collapse not-printed" id="projets">
+							<div class="card card-body">
+								<div class=" text-muted">
+									<ul>
+										<li>Valider un diplôme d'intégrateur web niveau bac + 3 en 2019</li>
+										<li>Me perfectionner en
+											<ul>
+												<li>PHP</li>
+												<li>Java</li>
+												<li>mySql</li>
+												<li>POO</li>
+												<li>MVC</li>
+												<li>GitHub</li>
+											</ul>
+										</li>
+										<li>Apprendre et m'entraîner sur
+											<ul>
+												<li>Le système de gestion de versions "Subversion"</li>
+												<li>Prestashop et Wordpress</li>
+												<li>Doxygen (demandé à Niort)</li>
+												<li>Compass et Sass (demandé à Niort)</li>
+											</ul>
+										</li>
+										<li>Finaliser le projet de CMS "Light" créé en 2017</li>
+										<li>Rejoindre une équipe de développement web: salarié? Création d'entreprise?</li>
+										<li>Rejoindre et servir une association</li>
+										<li>Devenir formateur: coach de retour à l'emploi, formation professionnelle dans l'informatique ou la vente, soutien scolaire..</li>
+									</ul>
+								</div>
+							</div><!-- <div class="card card-body"> -->
+						</div><!-- close <div class="collapse" id="collapseExample"> -->
+						
+					</div><!-- close <div class=" text-muted"> -->
+				</article><!-- close <div class="col-lg-6"> -->
+				<!-- display the skills icon from Awesome Font-->
+				<div class="col-lg-1 text-right"><i class="fa fa-flask fa-2x" aria-hidden="true"></i></div>
+
+				<article class="col-lg-4"><!-- Compétences -->
+					<h3>Compétences</h3>
+					<div class="container">
+					
+						<figure class="img_competences_impression">
+							<img src="img/competences.jpg" alt="Image compétences pour l'impression">
+						</figure>
+					
+						<div class="text-muted mb-3 not-printed">
+						PHP5<sup><a href="#1" id="renvoi1" title="(25% Tosa test du 28-01-18)">1</a></sup><!-- sup = exposant 1 (note en bas de page) -->
+							<div class="progress">
+								<div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+								</div>
+							</div>
+						</div>
+						<div class="text-muted mb-3 not-printed">
+						Java<sup><a href="#2" id="renvoi2" title="Actuellement en formation sur Openclassrooms">2</a></sup><!-- sup = exposant 1 (note en bas de page) -->
+							<div class="progress">
+								<div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+								</div>
+							</div>
+						</div>
+						<div class="text-muted mb-3 not-printed">
+							SQL<sup><a href="#3"	id="renvoi3" title="(76% Qcmquizz.com du 28-01-18)">3</a></sup>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100">
+								</div>
+							</div>
+						</div>
+						<div class="text-muted mb-3 text-m-t-50 not-printed">
+							Bootstrap<sup><a href="#4" id="renvoi4" title="(64% Tosa test du 28-01-18)">4</a></sup> 
+							<div class="progress">
+								<div class="progress-bar bg-info" role="progressbar" style="width: 64%" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="text-muted mb-3 not-printed">
+							CSS3<sup><a href="#5"	id="renvoi5" title="(76% Qcmquizz.com du 28-01-18)">5</a></sup>
+							<div class="progress">
+								<div class="progress-bar bg-warning" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100">
+								</div>
+							</div>
+						</div>
+						<div class="text-muted mb-3 not-printed">
+							Html5<sup><a href="#6" id="renvoi6" title="(76% Qcmquizz.com du 28-01-18)">6</a></sup>
+							<div class="progress">
+								<div class="progress-bar bg-danger" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="text-muted mb-3 not-printed">
+							SEO<sup><a href="#7" id="renvoi7" title="(32% sur Moz.com	test du 28-01-18)">7</a></sup>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 32%" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div><!-- close <div class="container"> -->
+				</article><!-- close <div class="col-lg-4"> -->
+				</div><!--	close <div class="row"> -->
+
+				<div class="col-lg-12"><hr></div> <!-- ____________________________________________ -->
+				
+				<!--
+				<div style = "page-break-before:always"></div><!-- saut de page -> pdf print 
+				--> 
+				
+				<div class="row"><!-- 2/4 FORMATION -->
+					
+					<p>
+			
+					<div class="col-lg-1 text-right"><i class=" fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
+					</div>
+					<article class="col-lg-6"><!-- Formation détails -->
+						<h3>Formations</h3>
+						<div class="text-muted">
+							<ul>
+								<li><a href="http://marcharnist.fr/diplomes/baccalaureat.pdf" target="_blank">Baccalauréat des Sciences Economiques et Sociales</a></li>
+								<li><a href="http://marcharnist.fr/diplomes/bafa.pdf" target="_blank">BAFA</a></li>
+								<li><a href="http://marcharnist.fr/diplomes/afps.pdf" target="_blank">AFPS</a></li>
+								<li>Formation Openclassroomsooms 2017 sur la programmation orientée objet et l'architecture modèles-vues-contrôleurs</li>
+								<li><a href="http://marcharnist.fr/diplomes/certificat-html5-css3.pdf">Certification Html5 et Css3 - Openclassroomsom 2018</a></li>
+								<li><a data-toggle="collapse" href="#sylvanFormation" role="button" aria-expanded="false" aria-controls="sylvanFormation" title="Détails">Sylvan formation Développeur-intégrateur-référenceur Web 2018</a>
+									<div class="collapse" id="sylvanFormation">
+										<div class="card card-body">
+											<ul>
+												<li><a href="http://marcharnist.fr/diplomes/Certification-Digital-Active.pdf" target="_blank">Certification Digital With Google</a></li>
+												<li>Créer des documents HTML / CSS conformes aux normes et adaptés au public visé</li>
+												<li>Créer un thème à partir de feuilles de style CSS</li>
+												<li>Bootstrap</li>
+												<li>Modifier une landing page</li>
+												<li>SASS</li>
+												<li>Compilation de SASS réussie</li>
+												<li>JS. Exemple d'application Javascript: <a href="pomodoro.html" target="_blank">Pomodoro</a></li>
+												<li>Versioning sur GitLab et GitHub</li>
+												<li>Installation d'un blog sous "Wordpress"</li>
+												<li><a title="CMS Light" href="http://marcharnist.fr/index.php">Création d'un CMS de A à Z en PHP POO, MVC, HTML5, CSS3, JS Bootstrap</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li><a href="http://marcharnist.fr/diplomes/Certification-Digital-Active.pdf" target="_blank">Certification Digital With Google</a></li>
+								<li>Formation libre en Java depuis avril 2019 avec certification Openclassrooms prévue fin juin 2019.</li>
+							</ul>
+						</div>
+					</article>
+
+					<!-- Language icon from Awesome Font      LANGUES  -->			
+					<div class="col-lg-1 text-right"><i class="fa fa-language fa-2x" aria-hidden="true"></i>
+					</div>
+					<article class="col-lg-4"><!-- langues -->
+						<h3>Langues</h3>
+						<div class="container">
+						
+							<figure class="img_langues_impression">
+								<img src="img/langues.jpg" alt="Image langues pour l'impression">
+							</figure>
+						
+							<div class="text-muted mb-3 not-printed">Anglais<sup><a href="#8"	id="renvoi8" title="(57% test sur www.idlangues.fr du 28-01-18)">7</a></sup>
+							<div class="progress">
+								<div class="progress-bar bg-danger" role="progressbar" style="width: 57%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+								</div>
+							</div>
+							</div>
+						
+							<div class="text-muted mb-3 text-m-t-50 not-printed">Allemand<sup><a href="#9"	id="renvoi9" title="(67% test sur www.goethe.de du 28-01-18)">8</a></sup>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+								</div>
+							</div>
+							</div>
+
+							<div class="text-muted mb-3 not-printed">Français
+							<div class="progress">
+								<div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+								</div>
+							</div>
+							</div>
+						</div><!-- close <div class="container"> -->
+					</article><!-- close <div class="col-lg-4"> langues -->
+				</div><!--	close <div class="row"> 2/4 FORMATIONS -->
+
+				<div class="col-lg-12"><hr></div> <!-- ____________________________________________ -->
+				
+				<div class="row"><!-- 3/4 Expériences significatives -->
+						
+					<!-- display the cogs icon from Awesome Font-->					
+					<div class="col-lg-1 text-right"><i class=" fa fa-cogs fa-2x" aria-hidden="true"></i></div>
+					
+					<article class="col-lg-6">
+						<h3>Expériences significatives</h3>
+						<div class=" text-muted">
+							<ul>
+								<li>Depuis mars 2019: en formation Java sur Openclassrooms
+									<ul>
+										<li>Installation de l'environnement de travail</li>
+										<li>Savoir utiliser Eclipse</li>
+										<li>Création de classes et héritages</li>
+										<li>Création d'algorithmes avec les boucles</li>
+										<li>Lancement des programmes sous Windows</li>
+										<li>Polymorphisme et surcharges de méthodes</li>
+									</ul>
+								</li>
+								<li>Septembre 2018 à mars 2019: développeur web en C# et Asp.net chez Idem-Santé à Chauray (poste actuel)
+									<ul>
+										<li>Modernisation du design d'applications web avec Html5 et Css3</li>
+										<li>Design d'applications pour mobiles</li>
+										<li>Découverte des bases de données Toad</li>
+										<li>Wordpress: mise à jour du site web de l'entreprise</li>
+									</ul>
+								</li>
+								<li>6 ans créateur de sites web en micro entreprise
+									<ul>
+										<li>Création de sites web (artisans, entreprises, associations et communes)</li>
+										<li>Référencement</li>
+										<li>Cours d’informatiques</li>
+										<li>Récolte des besoins du client et élaboration du projet</li>
+										<li>Ecriture du code en PHP, Sql, Html et Css, avec Wordpress, Dotclear et autres sites en dur avec bases de données mySql montées de toutes pièces</li>
+									</ul>
+								</li>
+								<li>15 ans vendeur dans la grande distribution (Carrefour, Migros, Super U, Intermarché, Mr Bricolage)
+									<ul>
+										<li>Gestionnaire de rayon, mise en rayon, commandes, inventaires</li>
+										<li>encadrement des employés saisonniers, intérimaires et stagiaires</li>
+									</ul>
+								</li>
+								<li>2 ans conseiller assurances et finances chez AGF
+									<ul>
+										<li>Porte à porte: questionnaire "étude de marché"</li>
+										<li>gestion de patrimoine</li>
+									</ul>
+								</li>
+								<li>10 ans bénévole en associations (Restos du cœur, Sem'Art Dons)
+									<ul>
+										<li>Musique (guitare)</li>
+										<li>Animation</li>
+										<li>Accompagnement d’handicapés</li>
+									</ul>
+								</li>
+							</ul>
+						</div><!-- close <div class=" text-muted"> -->
+					</article><!-- close <article class="col-lg-6"> -->
+					
+					<!-- Star icon (Awesome Font) --> 				
+					<div class="col-lg-1 text-right"><i class="fa fa-star fa-2x" aria-hidden="true"></i></div>
+
+					<article class="col-lg-4"><!-- Créations -->
+						<h3>Créations</h3>
+						<div class="container">
+							<div class="thumbnail">
+								<a href="http://ludacm.fr" target="_blank">
+								<img class="creation"  alt="photo du site lud'acm.fr" src="http://marcharnist.fr/img/ludacm.jpg">
+								</a>
+								<div class="caption">
+									<p>Serious Game <a href="http://ludacm.fr" target="_blank">Lud'ACM</a> en 2017, avec POO, MySQL, CSS3, HTML5 sur une architecture MVC avec espace membre et backoffice pour utilisateur néophyte.</p>
+								</div>
+							</div>
+						</div><!-- close <div class="container"> -->
+					</article><!-- close <div class="col-lg-4"> -->
+				</div><!--	close <div class="row"> -->
+
+				<div class="col-lg-12"><hr></div> <!-- ____________________________________________ -->
+				
+				<!-- Insère un saut de page à l'impression ou pdf
+				<div style="page-break-after:always;"></div>
+				-->
+			
+				<section class="row"><!-- Notes et renvois -->
+					<h3 class="h4 text-muted">Notes et renvois</h3>
+
+					<div class="col-12 text-muted">
+						<p>
+							<sup id="1"><a href="#renvoi1">1</a></sup> 25% de bonnes réponses au test PHP Tosa le 28-01-18. <a href="#renvoi1">Retour</a>
+						<br>
+							<sup id="2"><a href="#renvoi2">2</a></sup> Actuellement en formation sur Openclassrooms depuis mars 2019. <a href="#renvoi2">Retour</a>
+						<br>
+							<sup id="3"><a href="#renvoi3">3</a></sup> 76% de bonnes réponses au test SQL DE W3Scool le 28-01-18. <a href="#renvoi3">Retour</a>
+						<br>
+							<sup id="4"><a href="#renvoi4">4</a></sup> 64% de bonnes réponses au test Bootstrap chez W3Scool le 28-01-18. <a href="#renvoi4">Retour</a>
+						<br>
+							<sup id="5"><a href="#renvoi5">5</a></sup> 76% de bonnes réponses au test CSS3 (test Html5 et CSS3) sur Qcmquizz.com le 28-01-18. <a href="#renvoi5">Retour</a>
+						<br>
+							<sup id="6"><a href="#renvoi6">6</a></sup> 76% de bonnes réponses au test Html5 (test HTML5 et CSS3) sur Qcmquizz.com le 28-01-18. <a href="#renvoi6">Retour</a>
+						<br>
+							<sup id="7"><a href="#renvoi7">7</a></sup> 32% de bonnes réponses au test SEO sur Moz.com le 28-01-18. <a href="#renvoi7">Retour</a>
+						<br>
+							<sup id="8"><a href="#renvoi8">8</a></sup> 57% de bonnes réponses au test d'anglais	sur <a href="http://www.idlangues.fr/tests-langues/test-anglais-gratuit.html">www.idlangues.fr</a> le 28-01-18. <a href="#renvoi8">Retour</a>
+						<br>
+							<sup id="9"><a href="#renvoi9">9</a></sup> 67% de bonnes réponses au test d'allemand sur <a href="https://www.goethe.de/fr/spr/kup/tsd.html">www.goethe.de</a> le 28-01-18. <a href="#renvoi9">Retour</a>
+						</p>
+					</div>
+				</section>
+
+				<footer class="row border-top">
+					<div class="col-lg-12">
+						<blockquote class="mb-0 mt-1 p-3"><!-- mb-0 = margin-bottom 0 -->
+							<p><em>Les grandes choses ne sont jamais faites par une personne mais par une équipe de gens, comme les Beatles: à quatre ils étaient exceptionnels, mieux que chacun tout seul. Steve Jobs</em></p>
+						</blockquote>
+					</div>
+				</footer>
+			</div><!-- Close <div class="page-header mt-50"> line ~22 -->
+		</div><!-- Close <div class="container"> line ~21 -->
+		
+		<!-- Bootstrap links -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	</body>
+</html>
+	
+	

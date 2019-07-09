@@ -1,0 +1,9 @@
+
+img.creation {
+	width:100%;
+	height:auto; 
+}
+
+.img_competences_impression, .img_langues_impression {
+	display:none;
+}

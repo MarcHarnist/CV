@@ -1,0 +1,19 @@
+@media print {
+
+  body {
+	font-size:1.5em;
+  }
+  nav {display:none !important;}
+  .creation {
+	width:200px !important;
+	/*height:auto; 
+  */
+  }
+  .not-printed{
+	display:none;
+  }
+	  
+	.img_competences_impression, .img_langues_impression {
+		display:block !important;
+	}	  
+}

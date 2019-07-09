@@ -1,0 +1,16 @@
+
+@media (min-width: 1500px){
+}
+@media (min-width: 769px){
+
+}
+@media (max-width: 768px){
+	img {
+		max-width:99%;
+	}
+	.etapesSousTitre {
+		margin-top: 120px;
+	}
+}
+
+
